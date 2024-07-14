@@ -1,0 +1,43 @@
+:root {
+  --backgroundcolor: linear-gradient(#e1b1b1, #a596dcae);
+  --btncolor: rgb(234, 237, 223);
+  --hovercolor: rgb(96, 91, 163);
+  --basicsize: 40px;
+}
+
+body {
+  background: var(--backgroundcolor);
+  background-attachment: fixed;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  position: absolute;
+  padding: var(--basicsize);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(234, 237, 223, 0.1);
+  border-radius: 10px;
+}
+
+button {
+  border: none;
+  background-color: var(--btncolor);
+  margin-top: var(--basicsize);
+  height: var(--basicsize);
+  width: calc(var(--basicsize) * 3);
+  border-radius: 10px;
+  font-size: calc(var(--basicsize) / 2);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+button:hover {
+  background-color: var(--hovercolor);
+  color: var(--btncolor);
+  cursor: pointer;
+  transition: 0.1s;
+}
